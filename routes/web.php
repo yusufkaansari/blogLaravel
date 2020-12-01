@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\Front\Homepage;
 
 /*
 |--------------------------------------------------------------------------
@@ -17,4 +18,5 @@ Route::get('/', function () {
     return view('welcome');
 });
 */
-Route::view('/', 'homepage');
+//Route::view('/', 'homepage');
+Route::get('/',[Homepage::class,'index']);

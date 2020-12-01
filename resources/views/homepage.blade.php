@@ -64,6 +64,24 @@
           <a class="btn btn-primary float-right" href="#">Older Posts &rarr;</a>
         </div>
       </div>
+      <!-- kategori listesi buradan başlıyor -->
+      <div class="col-md-3">
+        <div class="card">
+          <div class="card-header">
+            Kategoriler
+          </div>
+          <div class="list-group">
+            @foreach ($categories as $category)
+              <li class="list-group-item">
+                <a href="#">{{$category->name}} </a> <span class="badge bg-danger float-right">12</span>
+              </li>
+            @endforeach
+
+
+          </div>
+        </div>
+      <!-- sayfanın sağ tarafına katagori listesi eklendi -->
+      </div>
     </div>
   </div>
   <hr>
