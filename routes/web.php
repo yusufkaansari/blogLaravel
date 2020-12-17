@@ -19,4 +19,8 @@ Route::get('/', function () {
 });
 */
 //Route::view('/', 'homepage');
-Route::get('/',[Homepage::class,'index']);
+Route::get('/',[Homepage::class,'index'])->name('homepage');
+Route::get('/yazilar/sayfa',[Homepage::class,'index']);
+Route::get('/kategori/{category}',[Homepage::class,'category'])->name('category');
+Route::get('/{category}/{slug}',[Homepage::class,'single'])->name('single');
+//Route::get('/',[Homepage::class,'homepage'])->name('homepage');

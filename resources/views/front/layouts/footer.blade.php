@@ -2,6 +2,7 @@
   </div>
 </div>
   <!-- Footer -->
+
   <footer>
     <div class="container">
       <div class="row">
